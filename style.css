@@ -33,7 +33,7 @@ footer{
 .imagen_contene{
     width: 100%;
     height: 900px;
-    background: url('../UABCS_Tarea/Recursos/img/slide.jpg') no-repeat;
+    background: url('img/slide.jpg') no-repeat;
     background-size: cover;
 }
 
