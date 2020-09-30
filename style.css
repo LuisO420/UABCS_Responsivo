@@ -1,0 +1,215 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    font-size: 100%;
+    margin: 0px;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+header{
+    width:100%;
+    height:12vh;
+    display: flex;
+    justify-content: center;
+    background-color: #32618D;
+
+}
+
+footer{ 
+    display: block; 
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:6vh;  
+    background-color: #32618D;
+    justify-content: center;
+    color: #FFB606;
+    text-align: center;
+}
+
+.imagen_contene{
+    width: 100%;
+    height: 900px;
+    background: url('../UABCS_Tarea/Recursos/img/slide.jpg') no-repeat;
+    background-size: cover;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.container{
+    overflow: hidden;
+    width: 31.1%;
+    height: 60%;
+    padding: 10px 10px;
+}
+
+.container:nth-child(1){
+    float: left;
+}
+
+.container:nth-child(2){
+    float: left;
+}
+
+.container:nth-child(3){
+    float: right;
+    clear: none;
+
+}
+
+.oferta{
+    display: flex;
+    justify-content: center;
+}
+
+.oferta > p{
+    top: 100%;
+}
+
+.carta {
+	border: 1px solid #D6D2D2;
+	border-radius: 5px;	
+	overflow: hidden;
+	width: 80%;
+}
+.carta_img {
+	position: relative;
+}
+.carta_img img {
+	width: 100%;
+}
+
+.carta_img:hover{
+	display: block;
+}
+.carta-titulo {
+	text-align: center;
+}
+
+.lista {
+	color: #999999;
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
+}
+.lista li {
+	padding-bottom: 5px;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.contacto_contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0  20px 30px
+
+}
+
+.contacto_contenido > div {
+    padding: 15px;
+}
+
+.cajas_orden{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cajas_contacto{
+    border: black outset 1px;
+    border-radius: 1px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.form-control {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	margin: 7px 0;
+	padding: 7px 0;
+	width: 100%;
+}
+.btn {
+	background-color: #32618D;
+	border-radius: 5px;
+	color: #FFB606;
+	font-size: 15px;
+    padding-top: 10px;
+    padding-left: 30px;
+    width: 50%;
+    margin: 10px;
+}
+
+.contacto_caja {
+	display: flex;
+    flex-direction: column;
+    margin-bottom: 6vh;
+}
+
+.imagen_caja{
+    width: 40%;
+    height: 40%;
+}
+
+.contacto{
+    font-size: 30px;
+	text-align: center;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #8DABC2;
+	color: white;
+}
+
+.titulo_oferta{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    height: 100%;
+}
+
+@media screen and (max-width: 900px){
+    a{
+        font-size: 100%!important;
+    }
+    .oferta{
+        margin: 0 5%;
+    }
+    .container{
+        flex: 1 0 20%;
+        max-width: 90%;
+    }
+    .imagen_caja {
+        flex: 0 0 70%!important;
+        margin-bottom: 1rem;
+        padding-right: 0;
+    }
+    .contacto_caja{
+        flex: 0 1 100%!important;
+        max-width: 70%;
+        height: 15rem;
+        margin-bottom: 1rem;
+        padding-right: 0;
+    }
+    .contacto_caja button{
+        width: 100%;
+    }
+    footer:nth-child(n){
+        justify-content: center;
+        padding: 0 2rem;
+    }
+}
